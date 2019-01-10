@@ -1,0 +1,998 @@
+/*
+Theme Name:   	Teatro Cubano
+Theme URI:    	http://em-com.pl
+Author:       	Andrzej 'Mąka' Mącznik
+Author URI:		http://em-com.pl
+Description:  	Theme for Teatro Cubano
+Version:      	1.0
+
+COPYRIGHT BY www.em-com.pl - All right reserved!
+Contact: info@em-com.pl
+*/
+
+/*** IMPORT FONTS ***/
+@import url("css/bootstrap.min.css");
+@import url("css/fonts.css");
+@font-face {
+    font-family: HCCUBANTOUCH-REGULAR;  
+    src:url(fonts_second/HCCUBANTOUCH-REGULAR.ttf); 
+}
+@font-face {
+	font-family: Futura-Medium;	
+	src:url(fonts_second/Futura-Medium.ttf);	
+}
+@font-face {
+	font-family: HCHUMANTOUCHLOWER-REGULAR;
+	src:url(fonts_second/HCHUMANTOUCHLOWER-REGULAR.ttf);
+}
+@font-face {
+	font-family: HCHUMANTOUCHUPPER-REGULAR;
+	src:url(fonts_second/HCHUMANTOUCHUPPER-REGULAR.ttf);
+}
+
+/*** GENERAL ***/
+body {
+	font-family: 'HCHUMANTOUCHUPPER-REGULAR';
+	font-weight: 400;
+	background:#fff;
+	margin: 0;
+	padding: 0;
+}
+a.aigpl-breadcrumb {
+    color: #0091d4;
+}
+.navbar-brand {
+    position: relative;
+}
+h3.panel-title.faq-header {
+    color: #0090d4;
+}
+:focus {
+	outline: 0;
+}
+a {
+	text-decoration: none;
+	color:#0091d4;
+}
+a:hover {
+	text-decoration: none;
+	color:#ee3124;
+}
+
+/******************
+******GENERAL******
+******************/
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    display:none;
+}
+
+.glyphicon-chevron-up:before {
+    content: "\e113";
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.col-md-8.col-xs-12.col-sm-12 {
+    box-sizing: border-box;
+}
+.col-md-4.col-xs-12.col-sm-12 {
+    box-sizing: border-box;
+}
+p{
+   font-family: Futura-Medium; 
+}
+.alignleft {
+    margin-right: 10px;
+    float: left;
+}
+.alignright {
+    float: right;
+    margin-left: 10px;
+}
+.show_top {
+    display: none;
+}
+.aligncenter {
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+.container {
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+.mar-top-menu {
+	margin-top:100px;
+}
+nav.navbar.navbar-default {
+    background-color: rgba(251,212, 16,0.8);
+    border-color: transparent;
+    height:80px;
+}
+.col-md-12.col-xs-12.col-sm-12 {
+    box-sizing: border-box;
+}	
+div#one {
+    margin-top: 9%;
+    position: relative;
+    margin-bottom: 100px;
+}
+div.main {
+    float: left;
+    top: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 0px;
+
+}
+p {
+    float: left;
+    width: 100%;
+}
+h3.titlePages {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#one, #onas, #prywatnerezerwacje, #imprezyfirmowe, #faq, #kontakt, #galeria {
+    float: left;
+    width: 100%;
+}
+#kontakt {
+
+}
+.boxes {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: HCCUBANTOUCH-REGULAR;
+}
+.boxes > .col-md-12.col-xs-12.col-sm-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15 {
+    float: left;
+    position: relative;
+   /* background-color: rgb(253, 197, 22, 0.5);*/
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.box1 {
+    width:13.5%;
+}
+.box2 {
+    width: 13.8%;
+}
+.box3 {
+    width: 14.4%;
+}
+.box4 {
+    width: 14.7%;
+}
+.box5 {
+    width: 14.6%;
+}
+.box6 {
+    width: 14.8%;
+}
+.box7 {
+    width: 14.2%;
+}
+.box8 {
+    width: 13.5%;
+}
+.box9 {
+    width: 13.8%;
+}
+.box10 {
+    width: 13.8%;
+}
+.box11 {
+    width: 13.8%;
+}
+.box12 {
+    width: 13.8%;
+}
+.box13 {
+    width: 13.8%;
+}
+.box14 {
+    width: 13.8%;
+}
+.box15 {
+    width: 13.8%; 
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover, .box12:hover {
+   /* background-color: rgb(253, 197, 22, 0.9);*/
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a.box-href {    
+    position: relative;
+    color: #ee3124;
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    height: 100%;
+}
+.box-href-inside {
+	transform: translate(-50%,-50%);
+	position: absolute;
+	text-align: center;
+	left:50%;
+	top:50%;
+    font-weight: 600;
+}
+div.box1 > a > div {
+    width:100%;
+}
+div.box2 > a > div, div.box3 > a > div {
+    left: 45%;
+}
+
+.main-logo-center {
+    width: 35%;
+    position: relative;
+    float: left;
+    left: 48.4%;
+    transform: translateX(-50%);
+}
+
+.col-md-6, .col-md-8, .col-md-4, .col-md-5, .col-md-7 {
+    box-sizing: border-box;
+}
+
+.main_logo_center {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 35px;
+    height: 128px;
+}
+.center_logo_href {
+	position: relative;
+	float: left;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.col-md-6.col-xs-12.col-sm-12 {
+    box-sizing: border-box;
+}
+
+.answers_faq {
+    position: relative;
+    float: left;
+    width: 90%;
+    left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+}
+
+.glyphicon-plus:before {
+	font-size:22px;
+}
+
+.panel-group {
+    margin-bottom: 20px;
+}
+.panel.panel-default {
+    border-color: transparent;
+}
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+.panel {
+    box-shadow: none !important;
+}
+
+.info-right-contact-small > p {
+    float: left;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel {
+    margin-bottom: 20px;
+    /*background-color: #fff;*/
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-default > .panel-heading {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.panel-group .panel-heading {
+    border-bottom: 0;
+}
+.faq-header {
+    font-size: 20px;
+    line-height: 1.4;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.aigpl-img-count.aigpl-center {
+    display: none;
+}
+
+.aigpl-img-title.aigpl-center {
+    color: #ee3124;
+}
+
+/******************
+****** POSTS ******
+******************/
+
+.su-post {
+    float: left;
+    width: 33.33333%;
+    box-sizing: border-box;
+    position: relative;
+    height: 250px;
+}
+.su-posts-teaser-loop .su-post-thumbnail {
+    width: 100% !important;
+    height: 100% !important;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.su-posts-teaser-loop h2.su-post-title {
+    float: left;
+    position: relative;
+    text-align: center;
+    font-size: 35px !important;
+    width: 100%;   
+    margin-top: 10px !important;
+}
+h2.headerTitle {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: #ee3124;
+}
+a.su-post-thumbnail:hover {
+    background-color: #ee3124;
+    z-index: 111111111;
+    position: absolute;
+}
+h2.su-post-title a {
+    color: #ee3124;
+}
+/******************
+****** MENU *******
+******************/
+
+nav.navbar.navbar-default {
+   /* position: fixed;*/
+    width: 100%;
+    float: left;
+    z-index: 10000;
+    /* margin-bottom: 100px; */
+}
+ul#menu-menu-glowne, ul#menu-menu-english {
+    float: left !important;
+    height: 80px;
+    margin-left:50px;
+}
+
+li#nav-menu-item-46, li#nav-menu-item-45 {
+	position: absolute;
+	right: 0;
+}
+
+ul#menu-menu-glowne > li > a:hover, ul#menu-meun-english > li > a:hover {
+	text-decoration:underline;
+}
+ul#menu-menu-glowne > li > a, ul#menu-menu-english > li > a {
+	top:50%;
+	transform: translateY(-50%);
+	font-family:'HCCUBANTOUCH-REGULAR' !important;
+	font-size:20px;
+}
+/*ul#menu-menu-glowne > li > a:nth-child(1), ul#menu-menu-english > li > a:nth-child(1) {
+	color:#ee3124;
+}
+ul#menu-menu-glowne > li#nav-menu-item-163 > a, ul#menu-menu-english > li#nav-menu-item-37 > a, ul#menu-menu-glowne > li#nav-menu-item-165 > a, ul#menu-menu-english > li#nav-menu-item-57 > a {
+	color:#0090d4;
+}*/
+span.red {
+    color:#ee3124;
+}
+span.blue {
+    color:#0090d4;
+}
+li#nav-menu-item-57 > a, li#nav-menu-item-63 > a, li#nav-menu-item-165 > a, li#nav-menu-item-168 > a {
+    color: #0090d4 !important;
+}
+
+.languageSoft {
+    z-index: 11112;
+    position: fixed;
+    right: 16px;
+    height: 80px;
+    line-height: 80px;
+}
+.languageSoft > a {
+    font-size: 20px;
+    color: #0090d4;
+}
+ul#menu-menu-glowne > li, ul#menu-menu-english > li {
+	height: 80px;
+}
+ul#menu-menu-glowne > li > a, ul#menu-menu-english > li > a {
+    color:#ee3124;
+}
+.main-logo {
+	position: relative;
+	float: left;
+	left:50%;
+	transform: translateX(-50%);
+	width:120px;
+	top:-12px;
+}
+.my-menu-top {
+	position: relative;
+	float: left;
+	width:100%;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+/******************
+****** PAGES ******
+******************/
+
+.image_horizontal {
+    float: left;
+    position: relative;
+    background-repeat: repeat-x;
+    height: 250px;
+    width: 100%;
+}
+
+.img {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.box-text {
+	background:rgba(255, 255, 255, 0.6);
+	width:980px;
+	float: left;
+	position: relative;
+	left:50%;
+	transform: translateX(-50%);
+	margin-top:50px;
+	margin-bottom: 80px;
+    padding: 10px;
+}
+.box-text-two {
+	width:100%;
+	position: relative;
+	float: left;
+	background-position: center;
+    background-size: cover;
+
+}
+.text-main-about {
+/*	font-size:17px;
+	font-weight: 400;
+	padding:25px;
+	line-height: 1.5;
+	font-family: Futura-Medium; */
+}
+h2.first-header-title {
+    width: 100%;
+    position: relative;
+    float: left;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 4.5px;
+    color: #ee3124;
+    margin-bottom:10px;
+    font-family: HCCUBANTOUCH-REGULAR;
+}
+
+h3.second-header-title {
+    float: left;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    color: #0090d4;
+    margin-bottom: 0;
+    font-family: HCHUMANTOUCHLOWER-REGULAR;
+    text-transform: capitalize;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0090d4;
+}
+
+
+.google_map {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.contact_info {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+
+.contact_header {
+	width:100%;
+	position: relative;
+	float: left;
+	margin-top:120px;
+	text-align: center;
+	padding-top:10px;
+	padding-bottom:25px;
+	margin-bottom:20px;
+	font-size:35px;
+	color:#ee3124;
+}
+
+img.logo-footer {
+    width: 150px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    float: left;
+    margin-bottom:50px;
+}
+.aigpl-cnt-wrp.aigpl-col-3.aigpl-columns {
+    height: 420px;
+}
+.info-contact {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    color: #0090d4;
+}
+
+h4.contact-small-header {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 5px;
+    float: left;
+}
+
+p.info-small {
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+h4.header-right {
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+
+p.text-contact-right {
+    float: left;
+    margin-top: 0px;
+}
+
+
+
+/******************
+****** FOOTER *****
+******************/
+
+.menu_bottom {
+	width:100%;
+	position: fixed;
+	bottom:0;
+	height:60px;
+	background-color: rgba(251,212, 16,0.6);
+}
+.menu-bottom-left, .menu-bottom-right {
+	float: left;
+	width: 100%;
+	height: 60px;
+}
+#menu-bottom-li-right {
+	list-style: none;
+    float: right;
+    top:50%;
+    transform: translateY(-50%);
+    position: relative;
+    padding:0 10px;
+}
+#menu-bottom-li-right a {
+	color:#0090d4;
+}
+.navbar-bottom-right{
+	list-style: none;
+	float: right;
+	height: 100%;
+	margin-top:0;
+	margin-right: 0;
+	padding-right: 0;
+}
+.navbar-bottom-left {
+    list-style: none;
+    float: left;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+#menu-bottom-li-left {
+    float: left;
+    padding: 0 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#menu-bottom-li-left a {
+	color:#ee3124;
+}
+
+#menu-bottom-li-left a:hover {
+	text-decoration: underline;
+}
+
+/******************
+******* RWD *******
+******************/
+ .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15 {
+        height: 190px;
+    }
+ div.main {        
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+    }
+nav.navbar.navbar-default {
+    position: fixed;
+    display: none;
+}
+
+
+@media all and (min-width: 1px) and (max-width: 468px) {
+        div.main {
+        background: url(http://tcubano.lavidadanza.pl/wp-content/themes/teatro_cubano/img/bcg_mobile_468.png);
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+    }
+    .show_top {
+        display: block;
+    }
+
+    a.box-href {
+        font-size:14px;
+    }
+    nav.navbar.navbar-default {
+        display: block;
+        height:55px;
+        top:0;
+    }
+    body {
+        float: left;
+        width: 100%;
+    }
+    .main-logo-center {
+        width:45%;
+        left:50%;
+    }
+    .main_logo_center {
+        height: 77px;
+    }
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15 {
+        width:50%;
+        height: 120px;
+    }
+    a.box-href {
+        font-size:15px;
+    }
+    .image_horizontal {
+        height: 160px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    h2.first-header-title {
+        font-size:25px;
+    }
+    h3.second-header-title {
+        font-size:31px;
+    }
+    .box-text {
+        width:100%;
+    }
+    .text-main-about {
+        font-size: 14px;
+    }
+    div.panel-body > p {
+        font-size:12px;
+    }
+    #kontakt {
+        height: 150px;
+    }
+    .contact_header {
+        margin-top:65px;
+    }
+    .contact_info {
+        width:100%;
+        right:0;
+        top:0;
+        margin-bottom:125px;
+    }
+    li#menu-bottom-li-left, #menu-bottom-li-right {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .navbar-bottom-right {
+        padding-left: 0px;
+        float: left;
+    }
+    .back-to-top {
+        bottom:25px;
+    }
+    #menu-bottom-li-right {
+        padding-left:0px;
+    }
+    a.navbar-brand {
+        display: none;
+    }
+    ul#menu-menu-glowne, ul#menu-menu-english {
+        height: auto;
+        margin-left:0px;
+
+    }
+    ul#menu-menu-glowne > li, ul#menu-menu-english > li {
+        height: 50px;
+    }
+    ul#menu-menu-glowne > li > a, ul#menu-menu-english > li > a {
+        font-size:16px;
+    }
+    li#nav-menu-item-46, li#nav-menu-item-45 {
+        position: relative;
+    }
+    .languageSoft {
+        z-index: 11112;
+        position: fixed;
+        left: 16px;
+        height: 50px;
+        line-height: 50px;
+        width: 50%;
+        top:0;
+    }
+    #menu-bottom-li-left {
+        padding:0;
+    }
+    .menu-bottom-left, .menu-bottom-right {
+        height: 50px;
+    }
+
+    div#bs-example-navbar-collapse-1 {
+        background-color: rgba(246, 191, 12, 0.9);
+    }
+    .menu_bottom {
+        height: auto;
+    }
+    .container.mar-top-menu {
+        width: 100%;
+    }
+    .center_logo_href {
+        display: block !important;
+    }
+    img.alignnone {
+        max-width: 100%;
+        height: auto;
+    }
+    img.size-medium {
+        max-width: 100%;
+    }
+    .hide_bottom {
+        display:none;
+    }
+
+}
+
+@media all and (min-width: 469px) and (max-width: 1023px) {
+            div.main {
+        background: url(http://tcubano.lavidadanza.pl/wp-content/themes/teatro_cubano/img/bcg_mobile_768.png);
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+    }
+
+    a.box-href {
+        font-size:16px;
+    }
+    nav.navbar.navbar-default {
+        display: block;
+    }
+    body {
+        float: left;
+        width: 100%;
+    }
+    .main-logo-center {
+        width:37%;
+        left:50%;
+    }
+    .main_logo_center {
+        height: 77px;
+        margin-bottom:100px;
+    }
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9,.box10,  .box11, .box12, .box13, .box14, .box15 {
+        width:33%;
+        height: 220px;
+    }
+    a.box-href {
+        font-size:25px;
+    }
+    .image_horizontal {
+        height: 160px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    h2.first-header-title {
+        font-size:25px;
+    }
+    h3.second-header-title {
+        font-size:31px;
+    }
+    .box-text {
+        width:100%;
+    }
+    .text-main-about {
+        font-size: 20px;
+    }
+    div.panel-body > p {
+        font-size:16px;
+    }
+    img.logo-footer {
+        width:200px;
+        margin-top:0px;
+    }
+    .info-right-contact-small {
+        float: left;
+        width: 100%;
+    }
+
+    #kontakt {
+        height: 150px;
+    }
+    .contact_header {
+        margin-top:65px;
+    }
+    .contact_info {
+        width:100%;
+        right:0;
+        top:0;
+        margin-bottom:150px;
+    }
+    li#menu-bottom-li-left, #menu-bottom-li-right {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .info-right-contact-small > p {
+        float: left;
+        width: 100%;
+    }
+    .back-to-top {
+        bottom:125px;
+    }
+    a.navbar-brand {
+        display: none;
+    }
+    ul#menu-menu-glowne, ul#menu-menu-english {
+        height: auto;
+        margin-left:0px;
+
+    }
+    ul#menu-menu-glowne > li, ul#menu-menu-english > li {
+        height: 50px;
+    }
+    ul#menu-menu-glowne > li > a, ul#menu-menu-english > li > a {
+        font-size:18px;
+    }
+    li#nav-menu-item-46, li#nav-menu-item-45 {
+        position: relative;
+    }
+
+    div#bs-example-navbar-collapse-1 {
+        background-color: rgba(246, 191, 12, 0.9);
+    }
+    .menu_bottom {
+        height: auto;
+    }
+    .container.mar-top-menu {
+        width: 100%;
+    }
+    .center_logo_href {
+        display: block !important;
+    }
+    h4.header-right {
+        text-align: center;
+        width: 100%;
+    }
+    .info-right-contact-small > p {
+        width: 100%;
+        text-align: center;
+    }
+} 
+
+@media all and (min-width: 1024px) and (max-width: 1075px) {
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box11, .box12, .box13, .box14, .box15 {
+        width:33.33%;
+        height: 220px;
+    }
+    a.navbar-brand {
+        display: none;
+    }
+    ul#menu-menu-glowne > li > a, ul#menu-menu-english > li > a {
+        font-size: 16px;
+    }
+    .image_horizontal {
+        height: 260px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
